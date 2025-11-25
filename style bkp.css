@@ -1,0 +1,28 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.container{
+    width: 50vw;
+    height: 100vh;
+    background-color: blue;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* flex-direction: colmn*/
+
+    align-items: center;
+    justify-content: space-evenly;
+
+    flex-wrap: wrap;
+    
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}

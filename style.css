@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #c5c5c5;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 15px;
+
+}
+
+header i {
+    color: #fff;
+    display: none !important;
+}
+
+ul{
+    list-style: none;
+}
+
+header ul li {
+    color: #fff;
+    display: inline;
+    margin-left: 10px;
+}
+
+.container{
+    display: flex;
+}
+
+nav{
+    width: 200px;
+    height: 90vh;
+    background-color: #3f3f3f;
+    border-top: 3px solid #888;
+}
+
+nav ul li{
+    width: 200px;
+    padding: 15px;
+    color: #888;
+    cursor: pointer;
+    transition: .2s;
+}
+
+nav ul li:houver {
+    background-color: #888;
+}
+
+main{
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    row-gap: 15px;
+    padding: 20px;
+}
+
+main .box{
+    width: 250px;
+    height: 300px;
+    background-color: #888;
+    border-radius: 10px;
+
+}
+
+.box img{
+    width: 100%;
+    max-height: 60%;
+    border-radius: 10px 10px 0 0;
+}
+
+.box .info{
+    width: 100%;
+    max-height: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.info button{
+    width: 80%;
+    align-self: center;
+    background-color: #c5c5c5;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (max-width: 700px) {
+    header ul{
+        display: none;
+    }
+
+    header i{
+        display: block !important;
+    }
+
+    .container nav{
+        position: absolute;
+        top: 0;
+        left: -200px;
+        height: 100vh;
+
+    }
+}
